@@ -37,10 +37,6 @@
   text-underline-offset: 0.2em;
 }
 
-.header-menu-list a {
-
-}
-
 .menu-list-special-decor {
   list-style-type: none;
   text-underline-offset: 0.2em;
@@ -313,6 +309,39 @@
   min-height: 180px;
   padding: 0 50px 82px;
   background-color: rgb(255 255 255);
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 165px;
+  text-underline-offset: 0.2em;
+  padding: 1px;
+  gap: 5px;
+}
+
+.footer-menu-list-item {
+  margin-bottom: 4px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  width: 240px;
+  }
+
+.footer-social-list-item {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.footer-social-icon {
+  /* width: 48px; */
+
+  /* height: 48px; */
 }
 
 /** { */
