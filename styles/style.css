@@ -1,11 +1,15 @@
-.header {
+.header,
+.footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
+}
+
+.header {
+  align-items: center;
   height: 293px;
   padding: 92px 50px 96px;
   background-color: rgb(255 255 255);
@@ -30,14 +34,16 @@
   height: 22px;
   list-style-type: circle;
   row-gap: 36px;
+  text-underline-offset: 0.2em;
 }
 
 .header-menu-list a {
-  text-underline-offset: 0.2em;
+
 }
 
 .menu-list-special-decor {
   list-style-type: none;
+  text-underline-offset: 0.2em;
 }
 
 .no-decoration {
@@ -50,9 +56,9 @@
   height: 105px;
 }
 
-.header-address {
+.header-address,
+.footer-address {
   display: flex;
-  justify-self: end;
   overflow-wrap: break-word;
   line-height: 24px;
   font-style: normal;
@@ -60,8 +66,12 @@
   height: 98px;
   }
 
-.header-address a {
-  text-underline-offset: 0.2em;
+.header-address {
+  justify-self: end;
+}
+
+.footer-address {
+  justify-content: space-between;
 }
 
 .overlay {
@@ -299,11 +309,14 @@
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  place-content: space-between;
+  min-height: 180px;
+  padding: 0 50px 82px;
+  background-color: rgb(255 255 255);
 }
 
-* {
-  outline: 1px solid red;
-}
+/** { */
+
+/*  outline: 1px solid red; */
+
+/* } */
