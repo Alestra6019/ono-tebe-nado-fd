@@ -1,7 +1,6 @@
 .header,
 .footer {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
@@ -9,6 +8,7 @@
 }
 
 .header {
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
   padding: 92px 50px 96px;
@@ -64,10 +64,6 @@
 
 .header-address {
   justify-self: end;
-}
-
-.footer-address {
-  justify-content: space-between;
 }
 
 .overlay {
@@ -305,6 +301,7 @@
 }
 
 .footer {
+  grid-template-columns: 1fr 165px 1fr;
   place-content: space-between;
   min-height: 180px;
   padding: 0 50px 82px;
@@ -315,21 +312,20 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 165px;
-  text-underline-offset: 0.2em;
-  padding: 1px;
-  gap: 5px;
+
+  /* width: 165px; */
 }
 
 .footer-menu-list-item {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .footer-social-list {
   display: flex;
   justify-self: end;
   gap: 48px;
-  width: 240px;
+
+  /* width: 240px; */
   }
 
 .footer-social-list-item {
@@ -338,14 +334,7 @@
   height: 48px;
 }
 
-.footer-social-icon {
-  /* width: 48px; */
+* {
+  outline: 1px solid red;
 
-  /* height: 48px; */
-}
-
-/** { */
-
-/*  outline: 1px solid red; */
-
-/* } */
+ }
