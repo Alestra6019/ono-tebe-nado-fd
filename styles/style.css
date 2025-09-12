@@ -18,18 +18,12 @@
 .header-menu {
   display: grid;
   align-items: center;
-
-  /* margin-right: 0; */
 }
 
 .header-menu-list {
   display: flex;
-
-  /* flex-flow: row wrap; */
   align-items: flex-start;
   justify-content: space-between;
-
-  /* place-content: space-between; */
   width: 390px;
   height: 22px;
   list-style-type: circle;
@@ -79,9 +73,15 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 757px;
+  width: 100%;
 }
 
 .cover-title {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px;
+  position: relative;
   font-family: Raleway, sans-serif;
   font-size: 100px;
   font-weight: 700;
@@ -89,37 +89,27 @@
   letter-spacing: 0.3em;
   color: rgb(255 255 255);
   text-transform: uppercase;
-  text-align: center;
   padding: 165px 50px 0;
   margin-bottom: 106px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 20px;
-  position: relative;
 }
 
 .first-cover-title-word {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  width: 286px;
-  height: 115px;
+  grid-column: span 2 / span 2;
 }
 
 .second-cover-title-word {
-  grid-column-start: 2;
+  grid-column: span 2 / span 2;
+  grid-column-start: 3;
   grid-row-start: 2;
-  width: 339px;
-  height: 115px;
-  margin-left: 45px;
 }
 
 .third-cover-title-word {
-  grid-column-start: 3;
+  grid-column: span 3 / span 3;
+  grid-column-start: 4;
   grid-row-start: 3;
-  width: 387px;
-  height: 115px;
-  margin-left: -55px;
+  max-width: 387px;
+  place-self: end;
+  text-align: right;
 }
 
 .cover-description {
@@ -169,9 +159,9 @@
 }
 
 .lots-card-list {
-  display: flex; /* display: grid; */
-  flex-flow: row wrap; /* grid-template-columns: repeat(3, 1fr); */
-  justify-content: space-between; /* grid-auto-rows: 1fr; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   gap: 25px;
   position: relative;
 }
@@ -312,8 +302,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
-  /* width: 165px; */
 }
 
 .footer-menu-list-item {
@@ -324,8 +312,6 @@
   display: flex;
   justify-self: end;
   gap: 48px;
-
-  /* width: 240px; */
   }
 
 .footer-social-list-item {
@@ -333,8 +319,3 @@
   width: 48px;
   height: 48px;
 }
-
-* {
-  outline: 1px solid red;
-
- }
